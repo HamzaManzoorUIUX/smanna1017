@@ -43,7 +43,8 @@ app.get('/', function(req, res) {
 app.get('/signup', function(req, res) {
     res.render('signup',{
         games:gamesNames,
-        error:true
+        error:true,
+        myuser:false
     });
 });
 app.get('/payment', function(req, res) {
@@ -119,10 +120,10 @@ var sql = `INSERT INTO users(Id, firstName, lastName, emailAddress, password, ga
 try{
     db.query(`select * from users where emailAddress='${emailAddress}'`,function(err,rows,fields){
      if( !err&&rows.length){
-        res.render('/signup',{
+        res.render('signup',{
             games:gamesNames,
             error:err,
-            user:'true'
+            myuser:true
         });
       }
       else{
@@ -151,7 +152,8 @@ console.log(`server run on ${port}`);
 const signupCall=function(res,err){
     res.render('signup',{
         games:gamesNames,
-        error:err
+        error:err,
+        myuser:false
     });
 }
 
