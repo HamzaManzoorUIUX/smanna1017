@@ -1,0 +1,63 @@
+@import './importBootStrap';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import './font';
+body{
+    
+    font-family: 'Poppins', sans-serif !important;
+}
+.homeHeader{
+    height: 100vh;
+    min-height: 100vh;
+background-image: url('../assets/background.svg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.pointerNone{
+    pointer-events: none;
+}
+.font-weight-semibold{
+    font-weight: 600;
+}
+.gamesList{
+    padding: 0;
+    list-style-type: none;
+    column-count: 3;
+    column-gap: 5px;
+    @media(max-width:991px){
+    column-count: 2;
+max-height: 768px;
+overflow-y: auto;
+    }
+}
+.priceCard{
+    position: relative;
+    .p-head{
+        position: relative;
+        text-align: center;
+        color: white;
+
+background-position-y: bottom;
+background-position-x: center;
+.p-label{
+    font-size: 12px;
+    margin-bottom: .5rem;
+}
+    }
+    &.one{
+.p-head{
+    background-image: url('../assets/priceOne.svg');
+}
+    }
+    &.two{
+.p-head{
+    background-image: url('../assets/priceTwo.svg');
+}
+    }
+    &.three{
+.p-head{
+    background-image: url('../assets/priceThree.svg');
+}
+    }
+}

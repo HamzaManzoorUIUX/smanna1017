@@ -1,0 +1,21 @@
+{
+  "name": "shadowservers",
+  "version": "1.0.0",
+  "description": "This application is made by hamza Manzoor in case of any problem contact us on hamzamanzoor8234@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "keywords": [
+    "gamingserver"
+  ],
+  "author": "Hamza Manzoor",
+  "license": "ISC"
+}
