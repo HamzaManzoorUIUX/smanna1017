@@ -61,3 +61,26 @@ background-position-x: center;
 }
     }
 }
+.customerImg{
+    max-width: 250px;
+    width: 100%;
+}
+.datacenterImg{
+    max-width: 350px;
+    width: 100%;
+}
+.footerList{
+    list-style-type: none;
+    padding: 0;
+    li{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.signUpform{
+    background-color: white;
+    border-radius: 15px;
+    max-width: 560px;
+    width: 100%;
+    padding: 3rem;
+}
