@@ -9,3 +9,10 @@ checkboxRef.addEventListener('click',function(){
     }
 })
 })()
+function showError(){
+    var errorDisplay=document.querySelector('#errorDisplay')
+    errorDisplay.style.display='block'
+    setTimeout(function(){
+        errorDisplay.style.display='none'
+    },3000)
+}
